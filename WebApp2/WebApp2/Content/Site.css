@@ -1,24 +1,53 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿.column {
+    float: left;
+    width: 50%;
+    padding: 0;
+    margin: 5px 0;
 }
-
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+form ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
-
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+form li {
+    padding: 1px;
+    margin: 3px;
 }
-
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+form input[type="text"] {
+    width: 100%;
+}
+#addContact {
+    width: 300px;
+    float: left;
+    width:30%;
+}
+#contacts {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float:left;
+    width: 70%;
+}
+#contacts li {
+    margin: 3px 3px 3px 0;
+    padding: 1px;
+    float: left;
+    width: 300px;
+    text-align: center;
+    background-image: none;
+    background-color: #F5F5F5;
+}
+#contacts li h1
+{
+    padding: 0;
+    margin: 0;
+    background-image: none;
+    background-color: Orange;
+    color: White;
+    font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+}
+.removeContact, .viewImage
+{
+    padding: 3px;
+    text-decoration: none;
 }
