@@ -155,6 +155,10 @@
     <Content Include="App_Data\productDB_log.ldf">
       <DependentUpon>productDB.mdf</DependentUpon>
     </Content>
+    <Content Include="App_Data\sensordata.mdf" />
+    <Content Include="App_Data\sensordata_log.ldf">
+      <DependentUpon>sensordata.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
@@ -167,6 +171,11 @@
     <Content Include="Models\productORM.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>productORM.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Models\sensorORM.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>sensorORM.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
@@ -187,6 +196,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Controllers\SensorController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -195,6 +205,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>productORM.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sensorORM.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sensorORM.dbml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -231,6 +246,11 @@
   <ItemGroup>
     <None Include="Models\productORM.dbml.layout">
       <DependentUpon>productORM.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\sensorORM.dbml.layout">
+      <DependentUpon>sensorORM.dbml</DependentUpon>
     </None>
   </ItemGroup>
   <PropertyGroup>
